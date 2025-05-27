@@ -105,7 +105,7 @@
               <h4 class="text-h6 mb-3">Recommended Protection:</h4>
               <v-row v-if="exposureScore > 30">
                 <v-col cols="12" sm="6" v-for="product in recommendedProducts" :key="product.id">
-                  <v-card :to="`/products/${product.id}" class="h-100" outlined>
+                  <v-card :to="`/products/${product.id}`" class="h-100" outlined>
                     <v-img :src="product.image" height="120" cover></v-img>
                     <v-card-text class="pa-3">
                       <div class="text-subtitle-2 font-weight-bold">{{ product.name }}</div>
