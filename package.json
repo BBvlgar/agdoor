@@ -8,12 +8,16 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build --force"
+    "type-check": "vue-tsc --build --force",
+    "postinstall": "vite build"
   },
   "dependencies": {
+    "@aws-amplify/ui-vue": "^3.1.10",
     "aws-amplify": "^6.6.6",
     "vue": "^3.4.21",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.6.15",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.5.0",
@@ -21,15 +25,18 @@
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^20.12.5",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/tsconfig": "^0.5.1",
     "aws-cdk": "^2.137.0",
     "aws-cdk-lib": "^2.137.0",
     "constructs": "^10.3.0",
     "esbuild": "^0.20.2",
     "npm-run-all2": "^6.1.2",
+    "sass": "^1.72.0",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5",
     "vite": "^5.4.10",
+    "vite-plugin-vuetify": "^2.0.3",
     "vue-tsc": "^2.0.11"
   }
 }
